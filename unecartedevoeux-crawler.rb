@@ -52,7 +52,7 @@ class SosMessageClient
   def initialize(sosmessage_url, category_id)
     @sosmessage_url = sosmessage_url
     @category_id = category_id
-    @post_url = "#{@sosmessage_url}/api/v1/categories/#{@category_id}/message"
+    @post_url = "#{@sosmessage_url}/api/v2/categories/#{@category_id}/message"
   end
 
   def postMessages(messages)
